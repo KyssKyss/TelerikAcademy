@@ -15,8 +15,8 @@ namespace ShortToBinary
                 binNumber += shortNumber % 2;
                 shortNumber /= 2;
             }
-            string result = string.Join(" ", ReverseString(binNumber));
-            Console.WriteLine("The number in binary: \n{0}", result);
+            string result = string.Join("", ReverseString(binNumber));
+            Console.WriteLine("The number in binary: \n{0}", result.PadLeft(16,'0'));
         }
         private static char[] ReverseString(string s)
         {
