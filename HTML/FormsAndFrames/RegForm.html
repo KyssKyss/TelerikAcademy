@@ -52,7 +52,7 @@
                         <label for="state">State</label>
                     </td>
                     <td>
-                        <input type="text" name="state" id="state" placeholder="CA" pattern="[A-Z]{2}" tabindex="5"/>
+                        <input type="text" name="state" id="state" placeholder="CA" title="Only two alphabetic chars" pattern="[A-Z]{2}" tabindex="5"/>
                     </td>
                 </tr>
                 <tr>
@@ -82,7 +82,7 @@
                         <label for="cCode">Phone (Country code, Area code, number)</label>
                     </td>
                     <td colspan="3">
-                        <span>(+</span><input type="tel" name="cCode" id="cCode" placeholder="359" tabindex="8" /><span>)</span>
+                        <span>(+</span><input type="tel" name="cCode" id="cCode" title="Only three numbers" pattern="[0-9]{3}" placeholder="359" tabindex="8" /><span>)</span>
                         <input type="tel" name="aCode" id="aCode" placeholder="88" tabindex="9" /><span> -</span>
                         <input type="tel" name="number" id="number" placeholder="8334343" tabindex="10" />
                     </td>
