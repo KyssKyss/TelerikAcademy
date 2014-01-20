@@ -3,20 +3,23 @@
 <head>
     <meta charset="utf-8" />
     <title>Registration Form</title>
-    <style>
-       /*tbody td:nth-child(2) {width:300px;}*/
-        #state {width:50px;}
-        #lastName, #firstName {width:350px;}
-        #cCode, #aCode {width: 90px;}
+    <style>       
+        td:nth-child(odd) {text-align:right;}
+        table {width: 500px; border-spacing: 0px;}
+        #state {width: 45px;}
+        #lastName, #firstName {width: 350px;}
+        #cCode, #aCode {width: 76px;}
+        #city {width: 260px;}
+        table .buttons {text-align:center; background-color:aquamarine;}
     </style>
 </head>
 <body>
-    <form method="get">
+    <form method="post">
         <table border="1">
             <tbody>
                 <tr>
                     <td>
-                        <label>Last Name</label>
+                        <label for="lastName">Last Name</label>
                     </td>
                     <td colspan="3">
                         <input type="text" name="lastName" id="lastName" placeholder="Nakov" tabindex="1"/>
@@ -24,7 +27,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label>First Name</label>
+                        <label for="firstName">First Name</label>
                     </td>
                     <td colspan="3">
                         <input type="text" name="firstName" id="firstName" placeholder="Svetlin" tabindex="2"/>
@@ -32,21 +35,21 @@
                 </tr>
                 <tr>
                     <td>
-                        <label>Address</label>
+                        <label for="address">Address</label>
                     </td>
                     <td colspan="3">
-                        <textarea name="address" id="address" tabindex="3"></textarea>
+                        <textarea name="address" id="address" cols="23" placeholder="17 Hristo Botev Str. floor 3 apt. 12" tabindex="3"></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label>City</label>
+                        <label for="city">City</label>
                     </td>
                     <td>
                         <input type="text" name="city" id="city" placeholder="Kaspichan" tabindex="4"/>
                     </td>
                     <td>
-                        <label>State</label>
+                        <label for="state">State</label>
                     </td>
                     <td>
                         <input type="text" name="state" id="state" placeholder="CA" pattern="[A-Z]{2}" tabindex="5"/>
@@ -54,18 +57,18 @@
                 </tr>
                 <tr>
                     <td>
-                        <label>Zip/Postal Code</label>
+                        <label for="pCode">Zip/Postal Code</label>
                     </td>
                     <td colspan="3">
-                        <input type="number" name="pCode" placeholder="3295" tabindex="6"/>
+                        <input type="number" name="pCode" id="pCode" placeholder="3295" tabindex="6"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label>Country</label>
+                        <label for="country">Country</label>
                     </td>
                     <td colspan="3">
-                        <select name="country" tabindex="7">
+                        <select name="country" id="country" tabindex="7">
                             <option selected="selected">Bulgaria</option>
                             <option>England</option>
                             <option>Germany</option>
@@ -76,36 +79,36 @@
                 </tr>
                 <tr>
                     <td>
-                        <label>Phone (Country code, Area code, number)</label>
+                        <label for="cCode">Phone (Country code, Area code, number)</label>
                     </td>
                     <td colspan="3">
                         <span>(+</span><input type="tel" name="cCode" id="cCode" placeholder="359" tabindex="8" /><span>)</span>
-                        <input type="tel" name="aCode" id="aCode" placeholder="88" tabindex="9" /><span>-</span>
+                        <input type="tel" name="aCode" id="aCode" placeholder="88" tabindex="9" /><span> -</span>
                         <input type="tel" name="number" id="number" placeholder="8334343" tabindex="10" />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label>Email</label>
+                        <label for="mail">Email</label>
                     </td>
                     <td colspan="3">
-                        <input type="email" name="mail" placeholder="nakov@kaspichan.org" tabindex="11" />
+                        <input type="email" name="mail" id="mail" placeholder="nakov@kaspichan.org" tabindex="11" />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label>Birth date</label>
+                        <label for="month">Birth date</label>
                     </td>
                     <td colspan="3">
-                        <input type="date" name="month" tabindex="12" />
+                        <input type="date" name="month" id="month" tabindex="12" />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label>Gender</label>
+                        <label for="gender">Gender</label>
                     </td>
                     <td colspan="3">
-                        <select name="gender" tabindex="13">
+                        <select name="gender" id="gender" tabindex="13">
                             <option selected="selected">Male</option>
                             <option>Female</option>
                         </select>
@@ -113,24 +116,24 @@
                 </tr>
                 <tr>
                     <td>
-                        <label>Starting date</label>
+                        <label for="radio1">Starting date</label>
                     </td>
                     <td colspan="3">
-                        <input type="radio" name="radio" value="Spring 2006" tabindex="14"><span>Spring 2006</span>
-                        <input type="radio" name="radio" value="Summer 2006" tabindex="15"><span>Summer 2006</span>
+                        <input type="radio" name="radio" id="radio1" value="Spring 2006" tabindex="14"><span>Spring 2006</span>
+                        <input type="radio" name="radio" id="radio2" value="Summer 2006" tabindex="15"><span>Summer 2006</span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label>Comments/Questions</label>
+                        <label for="comment">Comments/Questions</label>
                     </td>
                     <td colspan="3">
-                        <textarea placeholder="Please send me information about you." tabindex="16"></textarea>
+                        <textarea cols="32" id="comment" placeholder="Please send me more information about you." tabindex="16"></textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="4">
-                        <input type="submit" value="Submit" tabindex="17"/><input type="reset" value="Clear this form" tabindex="18" />
+                    <td colspan="4" class="buttons">
+                        <input type="submit" value="Submit" id="submitButton" tabindex="17"/><input type="reset" value="Clear this form" tabindex="18" />
                     </td>
                 </tr>
             </tbody>
