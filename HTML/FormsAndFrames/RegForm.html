@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+    <style>
+       /*tbody td:nth-child(2) {width:300px;}*/
+        #state {width:50px;}
+        #lastName, #firstName {width:350px;}
+        #cCode, #aCode {width: 90px;}
+    </style>
+</head>
+<body>
+    <form method="get">
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td>
+                        <label>Last Name</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="text" name="lastName" id="lastName" placeholder="Nakov" tabindex="1"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>First Name</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="text" name="firstName" id="firstName" placeholder="Svetlin" tabindex="2"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Address</label>
+                    </td>
+                    <td colspan="3">
+                        <textarea name="address" id="address" tabindex="3"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>City</label>
+                    </td>
+                    <td>
+                        <input type="text" name="city" id="city" placeholder="Kaspichan" tabindex="4"/>
+                    </td>
+                    <td>
+                        <label>State</label>
+                    </td>
+                    <td>
+                        <input type="text" name="state" id="state" placeholder="CA" pattern="[A-Z]{2}" tabindex="5"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Zip/Postal Code</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="number" name="pCode" placeholder="3295" pattern="[0-9]{4}" tabindex="6"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Country</label>
+                    </td>
+                    <td colspan="3">
+                        <select name="country" tabindex="7">
+                            <option selected="selected">Bulgaria</option>
+                            <option>England</option>
+                            <option>Germany</option>
+                            <option>Poland</option>
+                            <option>Russia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Phone (Country code, Area code, number)</label>
+                    </td>
+                    <td colspan="3">
+                        <span>(+</span><input type="tel" name="cCode" id="cCode" placeholder="359" tabindex="8" /><span>)</span>
+                        <input type="tel" name="aCode" id="aCode" placeholder="88" tabindex="9" /><span>-</span>
+                        <input type="tel" name="number" id="number" placeholder="8334343" tabindex="10" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="email" name="mail" placeholder="nakov@kaspichan.org" tabindex="11" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Birth date</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="date" name="month" placeholder="01" tabindex="12" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Gender</label>
+                    </td>
+                    <td colspan="3">
+                        <select name="gender" tabindex="13">
+                            <option selected="selected">Male</option>
+                            <option>Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Starting date</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="radio" name="radio" value="Spring 2006" tabindex="14"><span>Spring 2006</span>
+                        <input type="radio" name="radio" value="Spring 2006" tabindex="15"><span>Summer 2006</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Comments/Questions</label>
+                    </td>
+                    <td colspan="3">
+                        <textarea placeholder="Please send me information about you." tabindex="16"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input type="submit" value="Submit" tabindex="17"/><input type="reset" value="Clear this form" tabindex="18" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
