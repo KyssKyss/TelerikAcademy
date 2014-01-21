@@ -10,7 +10,14 @@
         tfoot {
             background-color: rgba(228, 225, 225, 0.94);
         }
+        thead {
+            background-color: rgba(228, 225, 225, 0.94);
+        }
+        thead label {
+            margin-left: 5px;
+        }
         .filter {
+            margin-bottom: -2px;
             width: 18px;
 
         }
@@ -39,6 +46,46 @@
             padding: 4px;
             border-color: #ccc #ccc #000000 #000000;
         }
+        #endText {
+            margin-left: 250px;
+        }
+        #pSize {
+            margin-left: 20px;
+        }
+        #backwardPage {
+             margin-left: 20px;
+        }
+        #productName {
+            width: 250px;
+        }
+        #productID {
+            width: 100px;
+            text-align: center;
+        }
+        #productIDText {
+            width: 50px;
+        }        
+        #priceText {
+            width: 80px;
+        }
+        #price {
+            width: 150px;
+        }
+        #quantity {
+            width: 150px;
+        }
+        #quantityText {
+            width: 100px;
+        }
+         #stockText {
+            width: 80px;
+        }
+        #stock {
+            width: 150px;
+        }
+        #discontinued {
+            width: 80px;
+        }
 
     </style>
 </head>
@@ -51,25 +98,23 @@
                         <label>Drag a column header and drop it here to group by that column</label>
                     </td>
                 </tr>
-            </thead>
-            <tbody>
                 <tr>
-                    <td>
+                    <td id="productID">
                         <label for="productIDText">Product ID</label>
                     </td>
-                    <td>
+                    <td id="productName">
                         <label for="productNameText">Product name</label>
                     </td>
-                    <td>
+                    <td id="price">
                         <label for="priceText">Unit price</label>
                     </td>
-                    <td>
+                    <td id="quantity">
                         <label for="quantityText">Quantity per unit</label>
                     </td>
-                    <td>
+                    <td id="stock">
                         <label for="stockText">Units in stock</label>
                     </td>
-                    <td>
+                    <td id="discontinued">
                         <label for="discontinuedText">Discontinued</label>
                     </td>
                 </tr>
@@ -82,20 +127,22 @@
                     </td>
                     <td>
                         <input type="text" maxlength="8" name="priceText" id="priceText" />
-                        <input type="image" src="images/stock_standard-filter.png" alt="filter" class="filter">
+                        <input type="image" src="images/stock_standard-filter.png" alt="filter" class="filter" />
                     </td>
                     <td>
                         <input type="text" maxlength="8" name="quantityText" id="quantityText" />
                     </td>
                     <td>
                         <input type="text" maxlength="20" name="stockText" id="stockText" />
-                        <input type="image" src="images/stock_standard-filter.png" alt="filter" class="filter">
+                        <input type="image" src="images/stock_standard-filter.png" alt="filter" class="filter" />
                     </td>
                     <td>
                         <input type="checkbox" name="discontinuedText" id="discontinuedText" />
-                        <input type="image" src="images/stock_standard-filter.png" alt="filter" class="filter">
+                        <input type="image" src="images/stock_standard-filter.png" alt="filter" class="filter" />
                     </td>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>1</td>
                     <td>Chai</td>
@@ -126,7 +173,7 @@
                     <td>$22.00</td>
                     <td>46-6 oz bottles</td>
                     <td>53</td>
-                    <td><input type="checkbox" name="discontinuedText" id="discText3" /></td>
+                    <td><input type="checkbox" name="discontinuedText" id="Checkbox1" /></td>
                 </tr>
                 <tr>
                     <td>5</td>
@@ -134,7 +181,7 @@
                     <td>$21.35</td>
                     <td>36 boxes</td>
                     <td>0</td>
-                    <td><input type="checkbox"  checked="checked" name="discontinuedText" id="discText3" /></td>
+                    <td><input type="checkbox"  checked="checked" name="discontinuedText" id="Checkbox2" /></td>
                 </tr>
                 <tr>
                     <td>6</td>
@@ -142,7 +189,7 @@
                     <td>$25.05</td>
                     <td>12 oz jars</td>
                     <td>120</td>
-                    <td><input type="checkbox" name="discontinuedText" id="discText3" /></td>
+                    <td><input type="checkbox" name="discontinuedText" id="Checkbox3" /></td>
                 </tr>
                 <tr>
                     <td>7</td>
@@ -150,7 +197,7 @@
                     <td>$30.00</td>
                     <td>12 lb. pkgs.</td>
                     <td>15</td>
-                    <td><input type="checkbox" name="discontinuedText" id="discText3" /></td>
+                    <td><input type="checkbox" name="discontinuedText" id="Checkbox4" /></td>
                 </tr>
                 <tr>
                     <td>8</td>
@@ -158,7 +205,7 @@
                     <td>$421.35</td>
                     <td>12 jars</td>
                     <td>2</td>
-                    <td><input type="checkbox" name="discontinuedText" id="discText3" /></td>
+                    <td><input type="checkbox" name="discontinuedText" id="Checkbox5" /></td>
                 </tr>
                 <tr>
                     <td>9</td>
@@ -166,15 +213,15 @@
                     <td>$64.35</td>
                     <td>18-500 kg.</td>
                     <td>30</td>
-                    <td><input type="checkbox" checked="checked" name="discontinuedText" id="discText3" /></td>
+                    <td><input type="checkbox" checked="checked" name="discontinuedText" id="Checkbox6" /></td>
                 </tr>
                 <tr>
-                    <td>5</td>
+                    <td>10</td>
                     <td>Ikura</td>
                     <td>$21.35</td>
                     <td>12-200 ml.</td>
                     <td>31</td>
-                    <td><input type="checkbox" name="discontinuedText" id="discText3" /></td>
+                    <td><input type="checkbox" name="discontinuedText" id="Checkbox7" /></td>
                 </tr>
             </tbody>
             <tfoot>
@@ -182,11 +229,11 @@
                     <td colspan="6">
                         <input type="image" name="backwardPage" id="backwardPage" class="imgButton" alt="backward" src="images/skip_backward.png" />
                         <input type="image" name="prevPage" id="prevPage" class="imgButton" alt="back" src="images/left_arrow.png" />
-                        <a href="" id="button">1</a><a href="">2</a><a href="">3</a><a href="">4</a><a href="">5</a><a href="">6</a>
-                        <a href="">7</a><a href="">8</a><a href="">9</a><a href="">10</a><a href="">...</a>
+                        <a href="#" id="button">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a>
+                        <a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a><a href="#">...</a>
                         <input type="image" name="nextPage" id="nextPage" class="imgButton" alt="next" src="images/right_arrow.png" />
                         <input type="image" name="forwardPage" id="forwardPage" class="imgButton" alt="forward" src="images/skip_forward.png" />
-                        <label for="page">Page size:</label>
+                        <label for="page" id="pSize">Page size:</label>
                         <select name="page" id="page">
                             <option>1</option>
                             <option>2</option>
@@ -199,7 +246,7 @@
                             <option>9</option>
                             <option>10</option>
                         </select>
-                        <label>335105 items in 335111 pages</label>
+                        <label id="endText">335105 items in 335111 pages</label>
                     </td>
                 </tr>
             </tfoot>
