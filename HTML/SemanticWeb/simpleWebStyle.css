@@ -1,0 +1,30 @@
+section h1 {
+	text-align: center;
+	padding-top: 40px;
+}
+figure img {
+	padding-top: -100px;
+	margin-top: -100px;
+	padding-left: 80px;
+}
+nav  {
+	padding-left: 80px;
+	margin-left: 80px;
+}
+nav ul {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+nav a {
+	text-decoration: none;
+}
+article table, th, td {
+	width: 300px;
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 80px;
+	border: 2px solid black;
+	border-collapse:collapse;
+}
