@@ -1,0 +1,47 @@
+thead {
+	color: white;
+	background-color: #00ca00;
+}
+table {
+	border-spacing: 0px;
+}
+td{
+	border-width: 1px;
+	border-style: groove;
+	padding-left: 10px;
+}
+th {
+	border-left: inset;
+	border-bottom: outset;
+	border-top: outset;
+	border-right: inset;
+	border-width: 2px;
+	border-color: #00ca00;
+	padding-left: 10px;
+	text-align: left;
+	font-weight: normal;
+}
+tr:nth-child(even) {
+	background-color: lightgrey;
+}
+.contactName {
+	width: 160px;
+}
+.cities {
+	width: 120px;
+}
+.countries {
+	width: 150px;
+}
+.isPromoted {
+	width: 85px;
+}
+.countries img{
+	padding-top: 5px;
+}
+.countries p {
+	padding-left: 35px;
+	padding-top: -25px;
+	margin-top: -25px;
+	margin-bottom: 5px;
+}
