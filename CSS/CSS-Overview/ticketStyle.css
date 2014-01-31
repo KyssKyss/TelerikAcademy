@@ -13,7 +13,7 @@ th{
 	color: lightgray;
 }
 tr {
-	line-height: 25px;
+	line-height: 30px;
 }
 mark {
 	background-color: gray;
@@ -30,6 +30,9 @@ tbody tr:last-child  {
 	color: orange;
 	/* if the browser is not compatable with HTML5 */
 	font-weight: bold;
+}
+td a {
+	color: #ffff00;
 }
 a {
 	text-decoration: none;
