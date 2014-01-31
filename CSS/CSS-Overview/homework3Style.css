@@ -1,0 +1,33 @@
+body {
+	background-color: #C0C0C0;	
+}
+header {
+	text-align: center;
+	color: white;
+}
+article header {
+	text-align: left;
+	font-size: 1.2em;
+}
+li {
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 1.2em;
+	
+}
+li:last-child {
+	text-decoration: underline;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+li a {
+	color: white;
+}
+li a:hover {
+	background-color: lightgray;
+}
+body > footer {
+	text-align: center;
+}
