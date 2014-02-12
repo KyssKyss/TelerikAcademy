@@ -1,0 +1,55 @@
+body > section {
+    background-color: lightgray;
+    border-radius: 15px;
+    width: 600px;
+    margin-left: 200px;
+    padding-bottom: 40px;
+}
+div section {
+    background-color: white;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid gray;
+}
+header h1 {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: lighter;
+}
+button {
+    width: 75px;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: white;
+    font-size: 14px;
+    background: url(http://www.clker.com/cliparts/v/y/J/3/I/S/red-rectangle-button-md.png) no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    -moz-background-size: 75px 35px;
+    -o-background-size: 75px 35px;
+    -webkit-background-size: 75px 35px;
+    background-size: 75px 35px;
+    
+}
+div.buttons {
+    display: inline-block;
+    position: absolute;
+    margin-top: 180px;
+}
+section p {
+    float: right;
+    display: inline-block;
+    width: 270px;
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+section > img {
+    height: 210px;
+    width: 210px;
+    border: 2px solid gray;
+    margin: 20px;
+    display: inline-block;
+}
